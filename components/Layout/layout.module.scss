@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/customize.scss';
+
+.main_layout {
+  background: $gray;
+  color:$black;
+}
+.header {
+  background: $white;
+  height:68px;
+  .page_title {
+    font-size: 2.4rem;
+  }
+  &_user_side {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .user_menu_icon{
+    color: $gray2;
+  }
+}
+.newsFeed {
+  .ant-modal-header{
+    padding: 16px;
+  }
+}
+.newsFeedForm {
+  width:100%;
+}
+.formButton{
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+  .header{
+    height:120px;
+    &_user_side {
+      justify-content: center;
+    }
+  }
+  .page_title {
+    text-align: center;
+  }
+}

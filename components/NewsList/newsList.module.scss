@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+@import '../../styles/customize.scss';
+
+.itemHeader {
+  background: $white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px rgba(12, 26, 75, 0.24);
+}
+.itemTitle {
+  padding-right:8px;
+  font-size: 1.6rem;
+  color:$black;
+}
+.dateTime {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &_lable{
+    font-size: 1.2rem;
+    color:$grayDark;
+    padding:0  4px;
+  }
+  &_value{
+    color: $black;
+    padding:0 4px;
+  }
+  &_icon{
+    color:$gray2;
+    font-size: 16px;
+  }
+}
+.boxItem {
+  background: $gray3;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px rgba(12, 26, 75, 0.24);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.itemContent {
+  padding:16px;
+  display: flex;
+  flex-direction: column;
+}
+.btns_box{
+  display: flex;
+  justify-content: flex-end;
+  padding:16px;
+  gap:16px;
+}
+.searchInput{
+  width:200px;
+}

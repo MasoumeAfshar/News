@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+@import '../../styles/customize.scss';
+
+.formTitle {
+  font-size:24px;
+  color:$black;
+  display: block;
+  padding-bottom: 18px;
+}
+.fromSubTitle{
+  font-size:12px;
+  color:$gray4;
+  display: block;
+  padding-bottom: 10px;
+}
+.filtertitle{
+  font-size: 14px;
+  color: #222222;
+  display: block;
+  padding: 5px 8px;
+  background: #fff;
+  border-radius: 6px;
+  border: solid 1px $gray5;
+  padding-left: 8px;
+  height:32px;
+}
+.datePicker{
+  width:100%;
+}
+@media only screen and (max-width: 425px) {
+  .datePicker{
+    width:100%;
+  }
+  .filtertitle{
+    margin-top: 4px;
+  }
+}

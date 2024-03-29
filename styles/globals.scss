@@ -1,0 +1,49 @@
+@import './variables.scss';
+@import './antOverride.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $gray;
+  font-size: 62.5%;
+  direction: ltr;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1254px;
+  margin:0 auto 40px;
+  padding: 0 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%; 
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 100%; 
+    padding: 0 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%; 
+    padding: 0 8px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%; 
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,45 @@
+.green_button {
+  background-color: $green;
+  height:36px;
+  &:hover{
+    background-color: $greenLight !important;
+    border-color: $greenLight;
+  }
+}
+.green_button_text{
+  color: $green;
+  &:hover{
+    color: $greenLight !important;
+    background: none !important;
+  }
+}
+.green_button_border{
+  align-self: flex-end;
+  border-color: $green;
+  color:$green;
+  &:hover{
+    color: $greenLight !important;
+    border-color: $greenLight !important;
+    a{
+      color: $greenLight !important;
+    }
+  }
+}
+.red_button_border{
+  align-self: flex-end;
+  border-color: $red;
+  color:$red;
+  &:hover{
+    color: $redLight !important;
+    border-color: $redLight!important;
+    a{
+      color: $redLight!important;
+    }
+  }
+}
+.widebtn{
+  width:200px;
+}
+.mt32 {
+  margin-top: 32px;
+}
