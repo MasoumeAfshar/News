@@ -4,7 +4,7 @@ import HeaderBox from "../Layout/HeaderBox";
 import messages from "./messages";
 import NewsItem from "./NewsItem";
 import {
-  useGetNewsAPIListQuery,
+  useGetNewsListCategoryQuery,
   useGetGuardianNewsQuery,
   useGetNytimesNewsQuery,
 } from "../../api/news";
@@ -26,8 +26,7 @@ const NewsList = () => {
     }
   };
 
-  const { data: newsAPI } = useGetNewsAPIListQuery({});
-
+  const { data: newsAPI } = useGetNewsListCategoryQuery({});
   const { data: GuardianNews } = useGetGuardianNewsQuery({});
   const { data: NytimesNews } = useGetNytimesNewsQuery({});
 

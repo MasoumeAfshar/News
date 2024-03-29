@@ -38,17 +38,17 @@ const NewsItem = ({
           </Row>
         </Col>
         <Col span={24} className={styles.itemContent}>
-          <Row>
-            <Col span={18}>
+          <Row className={styles.content} justify={"space-between"}>
+            <Col span={18} md={16} xs={24}>
               <Paragraph>{data?.des}</Paragraph>
             </Col>
-            <Col span={6}>
-              <Image width={250} src={data?.img} />
+            <Col span={6} md={8} xs={24} className={styles.contentImg}>
+              <Image width={237} src={data?.img} />
             </Col>
           </Row>
-            <Button className={styles.green_button_border} disabled>
-                {messages.ViewDeials}
-            </Button>
+          <Button className={styles.green_button_border} disabled>
+              {messages.ViewDeials}
+          </Button>
         </Col>
       </Row>
     </div>

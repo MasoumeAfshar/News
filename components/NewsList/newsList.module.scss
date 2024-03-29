@@ -41,11 +41,11 @@
   display: flex;
   flex-direction: column;
 }
-.btns_box{
-  display: flex;
-  justify-content: flex-end;
-  padding:16px;
-  gap:16px;
+.content{
+  padding-bottom:16px;
+  &Img{
+    text-align: right;
+  }
 }
 .searchInput{
   width:200px;

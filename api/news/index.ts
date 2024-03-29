@@ -9,13 +9,14 @@ export const newsAPI = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: '' }),
   tagTypes: [TYPE],
   endpoints: builder => ({
-    getNewsListSource: builder.query< any, any >({
+    getNewsListCategory: builder.query< any, any >({
       query: (data) => {
         return {
-          url: `https://newsapi.org/v2/top-headlines?category=business&apiKey=c74efd52dd574e61a680d1f6fa0b35f3`,
+          url: `https://newsapi.org/v2/top-headlines?country=us&apiKey=c74efd52dd574e61a680d1f6fa0b35f3&pageSize=10`,
           method: 'GET',
         };
       },
+      transformResponse: mappers.RTKGetNewsAPIMapper,
       providesTags: [TYPE],
     }),
     getNewsSearch: builder.query< any, any >({
@@ -70,5 +71,5 @@ export const {
   useGetGuardianNewsQuery,
   useGetNytimesNewsQuery,
   useGetNewsSearchQuery,
-  useGetNewsListSourceQuery,
+  useGetNewsListCategoryQuery,
 } = newsAPI;
